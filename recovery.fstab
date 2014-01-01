@@ -1,0 +1,20 @@
+# Mount Points
+# Panic raw mmcblk0p1
+# Factory ext4 mmcblk0p2
+# Config ext4 mmcblk0p3
+# ? ? mmcblk0p4
+# Media vfat mmcblk0p5
+# Cache ext4 mmcblk0p6
+# Logs ext4 mmcblk0p7
+# System ext4 mmcblk0p8
+# Data ext4 mmcblk0p9
+# Sdcard vfat mmcblk1p1
+#mount point   fstype    device
+/panic         raw       /dev/block/mmcblk0p1
+/cache         ext4      /dev/block/mmcblk0p6
+/system        ext4      /dev/block/mmcblk0p8
+/data          ext4      /dev/block/mmcblk0p9       length=-16384
+/boot          emmc      /dev/block/mmcblk0p?
+/recovery      emmc      /dev/block/mmcblk0p?
+/sdcard        datamedia /dev/null
+/external_sd   vfat      /dev/block/mmcblk1p1
