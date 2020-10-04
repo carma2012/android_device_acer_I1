@@ -1,4 +1,4 @@
-android_device_acer_I1
+Android_Device_Acer_I1
 ======================
 
 Acer Liquid C1 device tree
